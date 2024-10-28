@@ -36,7 +36,7 @@ export const registerSchema = Joi.object({
 
   phoneNumber: Joi.string()
     .required()
-    .pattern(/^[0-9]{10}$/)
+    .pattern(/^[0-9]{13}$/)
     .messages({
       ...customMessages,
       'string.pattern.base': 'Phone number must be 10 digits'
