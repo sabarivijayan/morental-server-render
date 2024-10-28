@@ -72,6 +72,6 @@ app.use((err, req, res, next) => {
   console.error(err.stack); // Log the error stack
   res.status(500).send("Something broke!"); // Send a generic error response
 });
-
+seedAdmin();
 // Start the server
 startServer();
